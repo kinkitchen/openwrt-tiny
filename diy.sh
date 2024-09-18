@@ -6,7 +6,7 @@
 sed -i 's/bootstrap/opentomcat/g' ./feeds/luci/collections/luci/Makefile
 
 # 2-设置管理地址
-sed -i 's/192.168.1.1/192.168.5.100/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
 
 # 4-设置密码为空
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings
