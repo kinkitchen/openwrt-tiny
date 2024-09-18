@@ -14,4 +14,4 @@ sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.15/g' ./target/linux/x86/Makef
 git clone https://github.com/WukongMaster/luci-theme-opentomcat.git package/luci-theme-opentomcat
 
 # 添加 插件
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+# git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
