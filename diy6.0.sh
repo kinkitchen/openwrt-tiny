@@ -7,7 +7,7 @@
 sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makefile
 
 # 1-添加 lucky 插件
-git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
+# git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 
 # 2-添加 PowerOff 关机插件
 git clone https://github.com/WukongMaster/luci-app-poweroff.git package/luci-app-poweroff
