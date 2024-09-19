@@ -149,9 +149,9 @@ jobs:
         echo "release_tag=${{ env.TAG_TIME }}" >> $GITHUB_OUTPUT
         touch release.txt
         echo "OpenWrt-6.6_x86_64（支持ipv6）" >> release.txt
-        echo "默认地址：192.168.5.100" >> release.txt
+        echo "默认地址：192.168.2.2" >> release.txt
         echo "默认密码：无密码" >> release.txt
-        echo "插件清单：ZeroTier WireGuard ttyd lucky ShellCrash..." >> release.txt
+        echo "插件清单：ZeroTier WireGuard ttyd ShellCrash..." >> release.txt
         echo "安装ShellCrash：sh /usr/share/sub/install_sc.sh" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
@@ -172,11 +172,11 @@ jobs:
         retain_days: 50
         keep_minimum_runs: 10
 
-    - name: 删除旧版固件
-      uses: dev-drprasad/delete-older-releases@master
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      with:
-        keep_latest: 8
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+#   - name: 删除旧版固件
+#      uses: dev-drprasad/delete-older-releases@master
+#      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+#      with:
+#        keep_latest: 8
+#        delete_tags: true
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
