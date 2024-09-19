@@ -1,7 +1,7 @@
 # openwrt-tiny
-openwrt x86_64旁路由专用，仅保留ZeroTier WireGuard ttyd lucky ShellCrash，有关openwrt的问题不要问我，我也不懂，这是自用的，通过PVE或EXSI运行，开发它的目的仅仅是能快速的部署好我需要的旁路由。
+openwrt x86_64旁路由专用，仅保留ZeroTier WireGuard ttyd ShellCrash，有关openwrt的问题不要问我，我也不懂，这是自用的，通过PVE或EXSI运行，开发它的目的仅仅是能快速的部署好我需要的旁路由。
 
-- IP地址：192.168.5.100
+- IP地址：192.168.2.2
 - 用户名：root
 - 密码：无密码
 - 固件下载: [Releases](https://github.com/cgistar/openwrt-tiny/releases)
