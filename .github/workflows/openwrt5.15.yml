@@ -141,10 +141,10 @@ jobs:
         commit: main
         token: ${{ secrets.RELEASE_TOKEN }}
         body: |
-          OpenWrt-5.15_x86_64-个性编译版（支持ipv6）
-          默认地址：192.168.5.100
+          OpenWrt-5.15_x86_64-（支持ipv6）
+          默认地址：192.168.2.2
           默认密码：无密码
-          插件清单：ZeroTier WireGuard ttyd lucky ShellCrash...
+          插件清单：ZeroTier WireGuard ttyd ShellCrash...
           安装ShellCrash：sh /usr/share/sub/install_sc.sh
         artifacts: ${{ env.FIRMWARE }}/*
 
@@ -154,11 +154,11 @@ jobs:
         retain_days: 50
         keep_minimum_runs: 10
 
-    - name: 删除旧的Releases
-      uses: dev-drprasad/delete-older-releases@master
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      with:
-        keep_latest: 8
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+#    - name: 删除旧的Releases
+#      uses: dev-drprasad/delete-older-releases@master
+#      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+#      with:
+#        keep_latest: 8
+#        delete_tags: true
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
